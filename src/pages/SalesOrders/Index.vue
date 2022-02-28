@@ -1,25 +1,31 @@
 <template>
-  <q-page class="q-mt-md q-px-md">
-    <q-header
-      bordered
-      class="text-primary"
-      style="background-color: #2da0e4; padding-top: 30px"
-    >
-      <q-toolbar>
-        <q-toolbar-title
-          class="text-center text-white text-lato text-bold row items-end q-py-md"
-        >
-          <h1
-            class="text-h5 self-center col-10 offset-1 text-center text-bold q-ma-none"
-          >
-            Sales Orders
-          </h1>
-        </q-toolbar-title>
-      </q-toolbar>
-    </q-header>
+  <q-header bordered class="bg-primary text-white">
+    <q-toolbar>
+      <q-toolbar-title
+        class="text-center text-white text-lato text-bold row items-end q-py-md"
+      >
+        <h1 class="text-h5 self-center col-12 text-center text-bold q-ma-none">
+          Sales Orders
+        </h1>
+      </q-toolbar-title>
+    </q-toolbar>
+  </q-header>
 
-    <q-btn @click="onClick">Click</q-btn>
-  </q-page>
+  <q-page-container
+    class="q-px-md bg-secondary"
+    style="min-height: calc(100vh - 64px)"
+  >
+    <h1 class="text-bold text-h5 q-ma-none q-my-lg q-mt-lg">Scan Barcode</h1>
+
+    <q-btn
+      color="dark"
+      size="lg"
+      icon="qr_code_scanner"
+      class="text-center q-mx-auto flex"
+      style="border-radius: 10px"
+      @click="onClick"
+    />
+  </q-page-container>
 </template>
 
 <script>
