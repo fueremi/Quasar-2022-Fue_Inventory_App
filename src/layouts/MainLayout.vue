@@ -1,10 +1,7 @@
 <template>
-  <q-layout
-    view="hhh lpr lFf"
-    container
-    class="window-height shadow-2 rounded-borders text-lato"
-  >
-    <q-footer elevated class="bg-dark text-primary">
+  <q-layout view="hhh lpr fFf">
+    <router-view />
+    <q-footer bordered class="bg-dark text-white">
       <q-tabs
         no-caps
         active-color="primary"
@@ -42,10 +39,6 @@
         <q-route-tab name="more" icon="more_horiz" label="More" class="col" />
       </q-tabs>
     </q-footer>
-
-    <q-page-container style="background-color: #eff3f6">
-      <router-view />
-    </q-page-container>
   </q-layout>
 </template>
 
