@@ -1,25 +1,24 @@
 <template>
-  <q-page class="q-mt-md q-px-md">
-    <q-header
-      bordered
-      class="text-primary"
-      style="background-color: #2da0e4; padding-top: 30px"
-    >
-      <q-toolbar>
-        <q-toolbar-title
-          class="text-center text-white text-lato text-bold row items-end q-py-md"
-        >
-          <h1
-            class="text-h5 self-center col-10 offset-1 text-center text-bold q-ma-none"
-          >
-            Packages
-          </h1>
-        </q-toolbar-title>
-      </q-toolbar>
-    </q-header>
+  <q-header bordered class="bg-primary text-white">
+    <q-toolbar>
+      <q-toolbar-title
+        class="text-center text-white text-lato text-bold row items-end q-py-md"
+      >
+        <h1 class="text-h5 self-center col-12 text-center text-bold q-ma-none">
+          Packages
+        </h1>
+      </q-toolbar-title>
+    </q-toolbar>
+  </q-header>
+
+  <q-page-container
+    class="q-px-md bg-secondary"
+    style="min-height: calc(100vh - 64px)"
+  >
+    <h1 class="text-bold text-h5 q-ma-none q-my-lg q-mt-lg">Examples Data</h1>
 
     <div id="barcode-wrapper" class="text-center"></div>
-  </q-page>
+  </q-page-container>
 </template>
 
 <script>
